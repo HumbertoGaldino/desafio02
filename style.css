@@ -1,5 +1,6 @@
-body {
+  body {
     margin: 0;
+    padding: 0;
   
     font-family: "Open Sans", sans-serif;
   
@@ -9,33 +10,30 @@ body {
   }
   
   .page {
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
     padding-top: 65px;
   }
   
   nav {
     display: flex;
-    justify-content: start;
-    align-items: center;
-  
+    justify-content: space-between;
+    align-items: center;  
     margin-bottom: 15px;
   }
   
-  ul {
+  nav ul {
     display: flex;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  a {
+  nav ul li a {
     color: #1f1534;
     text-decoration: none;
-  }
-  
-  ul li a {
-      opacity: 0.5;
+    opacity: 0.5;
   }
   
   ul li a:hover {
@@ -43,12 +41,17 @@ body {
     opacity: 1;
   }
   
-  h1,
-  ul {
+  h1, ul {
     font-family: "Mulish", sans-serif;
   }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-  h1 {
+  section #text h1 {
     font-size: 49px;
     line-height: 56px;
     color: #1f1534;
@@ -58,12 +61,12 @@ body {
     width: 490px;
   }
   
-  h1 span {
+  section #text h1 span {
     color: #89c5cc;
     font-weight: bold;
   }
   
-  section p {
+  section #text p {
     font-size: 14px;
     line-height: 28px;
     color: #7d7987;
@@ -71,17 +74,21 @@ body {
     margin: 40px 0;
   }
   
-  button {
+  section #text button {
     color: white;
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
   
     background: #69B99D;
-    border: 0;
-    padding: 0 50px 30px;
+    border: none;
+    padding: 15px 32px;
   
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   
     border-radius: 4px;
   
@@ -95,18 +102,21 @@ body {
   footer {
     font-size: 14px;
     line-height: 28px;
-  
+    font-weight: 400;
     text-align: center;
   
-    margin-top: 80px;
+    margin: 60px 0;
   }
   
   footer a {
     font-weight: bold;
+    color: #000;
+    text-decoration: none;
   }
   
   #balls {
-      bottom: 0;
-      right: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
   }
   
